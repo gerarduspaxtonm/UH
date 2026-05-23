@@ -1,190 +1,69 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="id">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/css/bootstrap.min.css">
-    <title>Card Game</title>
-    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Project 3 - Website Card Game</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet"
+    >
+    <link
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+        rel="stylesheet"
+    >
+    <link rel="stylesheet" href="style.css" />
 </head>
-
-<body class="bg-light p-4">
+<body>
+    <div class="page-bg"></div>
     <div class="home-btn-wrap">
-        <a href="./" class="home-btn">
+        <a href="index.html" class="home-btn">
             ← Home
         </a>
     </div>
-    <h1 class="text-center fw-bold mb-4">That Time I Got Reincarnated as a Slime</h1>
-
-    <div class="container-fluid">   
-        <div class="row">
-            <div class="col-2">
-                <div class="card shadow">
-                    <div class="card-header">
-                        <h5 class="card-title">Rimuru Tempest</h3>
-                        <h6 class="card-subtitle text-muted">リムル＝テンペスト</h4>
-                    </div>
-                    <img src="https://i.pinimg.com/736x/f4/07/9d/f4079d77c828bf9caf56acdd30dd7966.jpg" class="card-img-top ratio-1x1" alt="Picture of rimuru tempest">
-                    <div class="card-body">
-                        <p class="card-text mb-1"><strong>Vitality:</strong></p>
-                        <div class="progress bg-muted float-end mb-1">
-                            <div class="progress-bar bg-dark" style="width: 100%">100%</div>
-                        </div>
-                        <p class="card-text mb-1"><strong>Role:</strong> Main Protagonist</p>
-                        <div class="row mb-1">
-                            <div class="col-4">
-                                <p class="card-text mb-0"><strong>99</strong> ATK</p>
-                            </div>
-                            <div class="col-4">
-                                <p class="card-text mb-0 text-center"><strong>99</strong> DEF</p>
-                            </div>
-                            <div class="col-4">
-                                <p class="card-text mb-0 text-right"><strong>99</strong> SPD</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+    <header class="hero-header">
+        <div class="container py-4 py-lg-5">
+            <div class="section-head mb-4">
+                <p class="section-label mb-2">Project Semester</p>
+                <h1 class="display-title">Website Card Game</h1>
             </div>
-            <div class="col-2">
-                <div class="card shadow">
-                    <div class="card-header">
-                        <h5 class="card-title">Veldora Tempest</h3>
-                        <h6 class="card-subtitle text-muted">ヴェルドラ＝テンペスト</h4>
+            <div class="glass-card overflow-hidden">
+                <div class="row g-0 align-items-stretch">
+                    <div class="col-lg-5">
+                        <img
+                            src="project3.png"
+                            class="img-fluid h-100 w-100"
+                            style="object-fit: cover; min-height: 350px;"
+                            alt="Project Website Card Game"
+                        >
                     </div>
-                    <img src="https://i.pinimg.com/originals/3b/1f/5c/3b1f5c8d6232b93bbb7f07e90ad7a793.jpg" class="card-img-top" alt="Picture of rimuru tempest">
-                    <div class="card-body">
-                        <p class="card-text mb-1"><strong>Vitality:</strong></p>
-                        <div class="progress bg-muted float-end mb-1">
-                            <div class="progress-bar bg-dark" style="width: 89%">89%</div>
-                        </div>
-                        <p class="card-text mb-1"><strong>Role:</strong> Storm Dragon</p>
-                        <div class="row mb-1">
-                            <div class="col-4">
-                                <p class="card-text mb-0"><strong>91</strong> ATK</p>
-                            </div>
-                            <div class="col-4">
-                                <p class="card-text mb-0 text-center"><strong>95</strong> DEF</p>
-                            </div>
-                            <div class="col-4">
-                                <p class="card-text mb-0 text-right"><strong>82</strong> SPD</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-2">
-                <div class="card shadow">
-                    <div class="card-header">
-                        <h5 class="card-title">Benimaru</h3>
-                        <h6 class="card-subtitle text-muted">ベニマル</h4>
-                    </div>
-                    <img src="https://i.pinimg.com/736x/f1/99/e4/f199e459efaa30b74145ea73c785f92d.jpg" class="card-img-top" alt="Picture of rimuru tempest">
-                    <div class="card-body">
-                        <p class="card-text mb-1"><strong>Vitality:</strong></p>
-                        <div class="progress bg-muted float-end mb-1">
-                            <div class="progress-bar bg-dark" style="width: 91%">91%</div>
-                        </div>
-                        <p class="card-text mb-1"><strong>Role:</strong> Strongest Majin</p>
-                        <div class="row mb-1">
-                            <div class="col-4">
-                                <p class="card-text mb-0"><strong>84</strong> ATK</p>
-                            </div>
-                            <div class="col-4">
-                                <p class="card-text mb-0 text-center"><strong>93</strong> DEF</p>
-                            </div>
-                            <div class="col-4">
-                                <p class="card-text mb-0 text-right"><strong>90</strong> SPD</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-2">
-                <div class="card shadow">
-                    <div class="card-header">
-                        <h5 class="card-title">Shion</h3>
-                        <h6 class="card-subtitle text-muted">シオン</h4>
-                    </div>
-                    <img src="https://i.pinimg.com/736x/2c/ed/aa/2cedaa485268dd7607744fe8c7fd7a3c.jpg" class="card-img-top" alt="Picture of rimuru tempest">
-                    <div class="card-body">
-                        <p class="card-text mb-1"><strong>Vitality:</strong></p>
-                        <div class="progress bg-muted float-end mb-1">
-                            <div class="progress-bar bg-dark" style="width: 83%">83%</div>
-                        </div>
-                        <p class="card-text mb-1"><strong>Role:</strong> First Secretary</p>
-                        <div class="row mb-1">
-                            <div class="col-4">
-                                <p class="card-text mb-0"><strong>98</strong> ATK</p>
-                            </div>
-                            <div class="col-4">
-                                <p class="card-text mb-0 text-center"><strong>78</strong> DEF</p>
-                            </div>
-                            <div class="col-4">
-                                <p class="card-text mb-0 text-right"><strong>91</strong> SPD</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-2">
-                <div class="card shadow">
-                    <div class="card-header">
-                        <h5 class="card-title">Shuna</h3>
-                        <h6 class="card-subtitle text-muted">シュナ</h4>
-                    </div>
-                    <img src="https://i.pinimg.com/736x/59/9f/45/599f45d59dadf64150062531e79f06c7.jpg" class="card-img-top" alt="Picture of rimuru tempest">
-                    <div class="card-body">
-                        <p class="card-text mb-1"><strong>Vitality:</strong></p>
-                        <div class="progress bg-muted float-end mb-1">
-                            <div class="progress-bar bg-dark" style="width: 78%">78%</div>
-                        </div>
-                        <p class="card-text mb-1"><strong>Role:</strong> Majin</p>
-                        <div class="row mb-1">
-                            <div class="col-4">
-                                <p class="card-text mb-0"><strong>96</strong> ATK</p>
-                            </div>
-                            <div class="col-4">
-                                <p class="card-text mb-0 text-center"><strong>83</strong> DEF</p>
-                            </div>
-                            <div class="col-4">
-                                <p class="card-text mb-0 text-right"><strong>81</strong> SPD</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-2">
-                <div class="card shadow">
-                    <div class="card-header">
-                        <h5 class="card-title">Souei</h3>
-                        <h6 class="card-subtitle text-muted">ソウエイ</h4>
-                    </div>
-                    <img src="https://i.pinimg.com/736x/f2/08/5e/f2085ee3304345a2b4a92dafff27c27e.jpg" class="card-img-top" alt="Picture of rimuru tempest">
-                    <div class="card-body">
-                        <p class="card-text mb-1"><strong>Vitality:</strong></p>
-                        <div class="progress bg-muted float-end mb-1">
-                            <div class="progress-bar bg-dark" style="width: 87%">87%</div>
-                        </div>
-                        <p class="card-text mb-1"><strong>Role:</strong> Majin</p>
-                        <div class="row mb-1">
-                            <div class="col-4">
-                                <p class="card-text mb-0"><strong>93</strong> ATK</p>
-                            </div>
-                            <div class="col-4">
-                                <p class="card-text mb-0 text-center"><strong>91</strong> DEF</p>
-                            </div>
-                            <div class="col-4">
-                                <p class="card-text mb-0 text-right"><strong>83</strong> SPD</p>
+                    <div class="col-lg-7">
+                        <div class="content-hero h-100 d-flex flex-column justify-content-center">
+                            <div class="info-panel accent-panel">
+                                <p class="section-label mb-2">Deskripsi Project</p>
+                                <h2 class="section-title mb-3">
+                                    Tentang Project Ini
+                                </h2>
+                                <p class="about-text">
+                                    Project Website Card Game merupakan website yang dibuat menggunakan Bootstrap Card, Grid System, dan Utilities untuk menampilkan informasi karakter secara visual, terstruktur, dan responsif. Setiap karakter ditampilkan dalam bentuk card yang berisi gambar, statistik, dan informasi tambahan sehingga tampilan website menjadi lebih menarik serta mudah dipahami pengguna.
+                                </p>
+                                <p class="about-text mb-0">
+                                    Melalui project ini, saya mempelajari penggunaan Bootstrap Card Component, pengaturan layout dengan Grid System, serta penerapan desain antarmuka agar tampilan website terlihat lebih modern dan tetap nyaman digunakan pada berbagai ukuran layar.
+                                </p>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.3/dist/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    </header>
+    <footer class="site-footer py-4">
+        <div class="container text-center">
+            <p class="mb-0">© 2026 Profil Siswa TIK | Kolese Kanisius</p>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
